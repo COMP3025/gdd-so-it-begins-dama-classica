@@ -1,41 +1,71 @@
-# GDD (Game Design Document)
+# Dama game
 
-Um "Game Design Document" (GDD) é um documento crucial para o desenvolvimento de jogos, pois descreve em detalhes a visão, a mecânica e todos os elementos importantes do jogo. Embora o conteúdo exato de um GDD possa variar dependendo do projeto, alguns tópicos importantes que geralmente são incluídos são:
+## 1. Visão geral do jogos
 
-1. **Visão Geral do Jogo:**
-   - Resumo do jogo.
-   - Objetivo geral e principais características.
-2. **Mecânica de Jogo:**
-   - Descrição detalhada das principais mecânicas de jogo (como movimento, combate, interação do jogador, etc.).
-   - Regras e sistemas que governam o funcionamento do jogo.
-3. **História e Narrativa:**
-   - Enredo do jogo, incluindo personagens principais e eventos importantes.
-   - Sequências de eventos que ocorrem durante o jogo (se houver uma história linear).
-4. **Personagens e Inimigos:**
-   - Descrição dos personagens jogáveis e seus atributos únicos.
-   - Descrição dos inimigos, suas habilidades e comportamentos.
-5. **Níveis e Ambientes:**
-   - Descrição de diferentes níveis, mundos ou ambientes no jogo.
-   - Layout dos níveis, obstáculos e itens importantes.
-6. **Arte e Estilo Visual:**
-   - Direção de arte, estilo gráfico e referências visuais.
-   - Design de personagens, inimigos e elementos do ambiente.
-7. **Áudio e Trilha Sonora:**
-   - Descrição da trilha sonora e efeitos sonoros.
-   - Como a música e os sons se relacionam com a jogabilidade e a narrativa.
-8. **Interface do Usuário (UI):**
-   - Design da interface do usuário, incluindo menus, HUD e outras telas de interação.
-9. **Progressão e Recompensas:**
-   - Sistema de progressão do jogador (experiência, níveis, etc.).
-   - Recompensas e conquistas no jogo.
-10. **Controle de Jogo e Mapeamento de Teclas:**
-    - Descrição dos controles do jogo para cada plataforma suportada.
-11. **Fluxo do Jogo:**
-    - Diagrama de fluxo que mostra como o jogador avança pelo jogo e como as partes se conectam.
-12. **Considerações Técnicas:**
-    - Plataformas de destino (PC, consoles, dispositivos móveis, etc.).
-    - Requisitos de desempenho e otimização.
-13. **Equipe de Desenvolvimento:**
-    - Lista de membros da equipe, suas funções e responsabilidades.
-14. **Cronograma de Desenvolvimento:**
-    - Planejamento do tempo estimado para diferentes fases do desenvolvimento.
+O jogo de damas é um antigo e popular jogo de tabuleiro jogado em um tabuleiro de 64 casas claras e escuras. Cada jogador tem 12 peças e o objetivo é capturar as peças do oponente ou bloqueá-las. As peças movem-se diagonalmente, e as capturas são feitas pulando sobre as peças adversárias. O jogo combina estratégia a longo prazo e táticas imediatas, proporcionando benefícios cognitivos. 
+
+## 2. Mecânica 
+O jogo de damas é disputado em um tabuleiro de 64 casas, inicialmente posicionadas em formato 8x8. Cada jogador tem 12 peças dispostas nas casas escuras, movendo-se somente na diagonal. As peças podem avançar uma casa à frente, mas quando alcançam a última linha do oponente, são coroadas, adquirindo habilidades extras, como movimentos para trás.
+
+O objetivo é capturar todas as peças do oponente ou bloqueá-las impedindo seus movimentos. As capturas ocorrem pulando sobre as peças adversárias diagonalmente para casas vazias imediatamente após. É possível realizar múltiplas capturas em sequência.
+
+A estratégia envolve o controle do centro do tabuleiro, a criação de formações que dominem o oponente e a prevenção de situações desfavoráveis. Há uma mistura de estratégia a longo prazo, como a movimentação das peças para posições mais vantajosas, e táticas imediatas, como criar situações de captura favoráveis.
+
+## 3. História e Narrativa
+O jogo de damas consiste em realizar estratégias em que você deve realizar a progressão dentro do tabuleiro com o objetivo de comer as peças adversárias.
+
+## 4. Personagens e inimigos
+No jogo de damas, a transformação de uma peça comum em dama é um momento crucial que concede novas habilidades e estratégias ao jogador. Existem duas formas de dama: a peça comum coroada ao alcançar a última linha do oponente e a peça comum, ampliando suas possibilidades táticas.
+
+Peça comum:
+A peça comum trata-se do estado inicial de cada peça. São permitidos apenas movitação em direção a frente em diagonal.
+
+Coroação da Peça:
+Quando uma peça comum alcança a última linha do tabuleiro adversário, ela é coroada e transformada em dama. Este processo concede à peça coroada a capacidade de se movimentar não apenas para frente, mas também para trás, ampliando sua área de alcance e influência no tabuleiro.
+
+## 5. Níveis e ambientes
+O ambiente trata-se de um tabuleiro 8 x 8, onde as peças podem realizar movimentos para frente na diagonal. 
+
+## 6. Arte e Estilo Visual
+A arte simplificada, com um contraste entre as cores das peças e tabuleiro. 
+
+Cores das peças:
+- Vermelha 
+- Azul
+
+Cor do Tabuleiro:
+- Preto e branco
+
+## 7. Áudio e Trilha Sonora
+Não possui efeitos sonoros 
+
+## 8. Interface do usuário
+A interface do jogo é diretamente acesso ao tabuleiro com as peças disposta na área inicial.
+
+## 9. Progressão e Recompensas
+Ao definir estratégias onde visa comer todas as peças adversária. Ao progredir no tabulheiro é possível que a peça atinga a extremidade na área inimiga, desta forma a sua peça torna-se um rainha. 
+
+## 10. Controle de Jogos 
+O controle é realizado através do mouse.
+
+## 11. Fluxo do jogo
+1. Todas as peças nas suas repectivas áreas iniciais
+2. Progressão das peças
+3. Realizar ação 
+    * Comer na diagonal somente para frente
+    * Torna-se rainha 
+        *   A rainha pode comer para qualquer direção
+4. Fim de jogo
+
+## 12. Considerações Técnicas 
+Sem considerações
+
+## 13. Equipe de desenvovimento
+Lucas de Oliveira Araújo
+
+## 14. Cronograma e Desenvolvimento 
+* Criar tabuleiro - 2 dias 
+* Criar Peças - 2 dias 
+* Criar regras de avanço - 2 semanas
+* Criar regras para o término do game  - 2 semanas
+* Entrega final - 05/12/2023
